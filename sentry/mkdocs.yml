@@ -1,0 +1,11 @@
+site_name: bstage
+site_description: RearPortal
+repo_url: https://github.com/RearPortal/rearportal
+edit_uri: edit/master/docs/
+
+
+
+nav:
+  - Table of Contents: index.md
+  - Plugins:
+    - Sentry : 'sentry.md'
