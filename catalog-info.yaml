@@ -1,0 +1,35 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sentry
+  description: |
+    RearPortal Core App
+  tags:
+    - statusneo
+    - rearportal
+    - developer-experience
+  links:
+    - title: RearPortal
+      url: https://www.statusneo.com/RearPortal
+      icon: http
+    - title: Source Control
+      url: https://www.github.com/RearPortal
+  annotations:
+    github.com/project-slug: RearPortal/rearportal
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/adr-location: docs/adrs
+spec:
+  type: service
+  lifecycle: production
+  owner: rearportal
+  system: sample-system
+  dependsOn:
+    - Resource:sample-resource
+    - Component:nishkarshraj
+  providesApis:
+    - hello-world
+    - petstore
+  consumesApis:
+    - starwars-graphql
+    - streetlights
